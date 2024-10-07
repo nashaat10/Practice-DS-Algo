@@ -180,3 +180,18 @@
 // console.log(sum(5, 5));
 
 ///////////////////////////////////////////////////////////////////////////////
+let str = " my name ";
+
+function charCount(str) {
+  const res = str.trim().split(" ").join("");
+  let char = {};
+  for (let i = 0; i < res.length; i++) {
+    if (char[res[i]] > 0) {
+      char[res[i]]++;
+    } else {
+      char[res[i]] = 1;
+    }
+  }
+  return char;
+}
+console.log(charCount(str));
