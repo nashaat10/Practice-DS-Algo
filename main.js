@@ -137,19 +137,46 @@
 // console.log(test(arr));
 
 ///////////////////////////////////////////////////////////////////////////
-arr = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2];
+// arr = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2];
 
-function foo(arr) {
-  let mySet = new Set();
-  for (let i = 0; i < arr.length; i++) {
-    if (mySet.has(arr[i])) {
-      return true;
-    }
-    mySet.add(arr[i]);
-  }
-  return false;
-}
+// function foo(arr) {
+//   let mySet = new Set();
+//   for (let i = 0; i < arr.length; i++) {
+//     if (mySet.has(arr[i])) {
+//       return true;
+//     }
+//     mySet.add(arr[i]);
+//   }
+//   return false;
+// }
 
-console.log(foo(arr));
+// console.log(foo(arr));
 
 // set is a  special type of object that only allows unique values: if you try to add a value that's already in the set, it will be ignored.
+
+/////////////////////////////////////////////////////////////////////////
+
+// arr = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2];
+// arr = [1, 2, 3, 1];
+// function foo2(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; i++) {
+//       if (arr[i] == arr[j]) {
+//         return true;
+//       }
+//       j++;
+//     }
+//     return false;
+//   }
+// }
+// console.log(foo2(arr));
+
+///////////////////////////////////////////////////////////////////
+
+// function sum(num1, num2) {
+//   return num1 + num2;
+// }
+
+// console.log(sum(5, 5));
+
+///////////////////////////////////////////////////////////////////////////////
