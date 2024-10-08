@@ -180,18 +180,91 @@
 // console.log(sum(5, 5));
 
 ///////////////////////////////////////////////////////////////////////////////
-let str = " my name ";
+// let str = " my name ";
 
-function charCount(str) {
-  const res = str.trim().split(" ").join("");
-  let char = {};
-  for (let i = 0; i < res.length; i++) {
-    if (char[res[i]] > 0) {
-      char[res[i]]++;
-    } else {
-      char[res[i]] = 1;
-    }
-  }
-  return char;
-}
-console.log(charCount(str));
+// function charCount(str) {
+//   const res = str.trim().split(" ").join("");
+//   let char = {};
+//   for (let i = 0; i < res.length; i++) {
+//     if (char[res[i]] > 0) {
+//       char[res[i]]++;
+//     } else {
+//       char[res[i]] = 1;
+//     }
+//   }
+//   return char;
+// }
+// console.log(charCount(str));
+
+////////////////////////////////////////////////////////////////////////////
+
+// frequency Counter Pattern
+
+// let arr1 = [1, 2, 2, 3, 4];
+// let arr2 = [1, 4, 4, 9, 16];
+
+// function same(arr1, arr2) {
+//   if (arr1.length !== arr2.length) {
+//     return false;
+//   }
+//   let freq1 = {};
+//   let freq2 = {};
+//   for (val of arr1) {
+//     freq1[val] = (freq1[val] || 0) + 1;
+//   }
+//   for (val of arr2) {
+//     freq2[val] = (freq2[val] || 0) + 1;
+//   }
+
+//   console.log(freq1);
+//   console.log(freq2);
+
+//   for (let key in freq1) {
+//     if (!(key ** 2 in freq2)) {
+//       return false;
+//     }
+//     if (freq2[key ** 2] !== freq1[key]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// console.log(same(arr1, arr2));
+
+////////////////////////////////////////////////////////////////////////////////
+
+// function anagram(str1, str2) {
+//   str1 = str1.trim();
+//   str2 = str2.trim();
+//   if (str1.length != str2.length) {
+//     return false;
+//   }
+//   let ang1 = {};
+//   let ang2 = {};
+
+//   for (let val of str1) {
+//     ang1[val] = (ang1[val] || 0) + 1;
+//   }
+//   for (let val of str2) {
+//     ang2[val] = (ang2[val] || 0) + 1;
+//   }
+//   console.log(ang1);
+//   console.log(ang2);
+
+//   for (let key in ang1) {
+//     if (!(key in ang2)) {
+//       return false;
+//     }
+//     if (ang2[key] !== ang1[key]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// let str11 = " mohamed";
+// let str22 = "ahmed";
+// console.log(anagram(str11, str22));
+
+//////////////////////////////////////////////////////////////////////////////////////
