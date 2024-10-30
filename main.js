@@ -662,34 +662,34 @@
 //console.log(isPalindrome(s));
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-var jewels = "aA";
-var stones = "aAAb";
-// Output: 3
-// Example 2:
+// var jewels = "aA";
+// var stones = "aAAb";
+// // Output: 3
+// // Example 2:
 
-// Input: jewels = "z", stones = "ZZ"
-// Output: 0
+// // Input: jewels = "z", stones = "ZZ"
+// // Output: 0
 
-var numJewelsInStones = function (jewels, stones) {
-  let freq1 = {};
-  let freq2 = {};
+// var numJewelsInStones = function (jewels, stones) {
+//   let freq1 = {};
+//   let freq2 = {};
 
-  for (let val of jewels) {
-    freq1[val] = (freq1[val] || 0) + 1;
-  }
-  for (let val of stones) {
-    freq2[val] = (freq2[val] || 0) + 1;
-  }
+//   for (let val of jewels) {
+//     freq1[val] = (freq1[val] || 0) + 1;
+//   }
+//   for (let val of stones) {
+//     freq2[val] = (freq2[val] || 0) + 1;
+//   }
 
-  for (let key in freq1) {
-    if (key in freq2) {
-      return key;
-    }
-    return 0;
-  }
-  // console.log(freq1);
-  // console.log(freq2);
-};
+//   for (let key in freq1) {
+//     if (key in freq2) {
+//       return key;
+//     }
+//     return 0;
+//   }
+// console.log(freq1);
+// console.log(freq2);
+// };
 
 // console.log(numJewelsInStones(jewels, stones));
 
